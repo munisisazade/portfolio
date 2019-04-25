@@ -5,6 +5,7 @@ class WebsiteCommon(models.Model):
     brand = models.CharField(max_length=255)
     copyright_text = models.CharField(max_length=255)
     offer_background = models.ImageField(upload_to="offer/", null=True, blank=True)
+
     def __str__(self):
         return "{}".format(self.brand)
 
@@ -50,7 +51,6 @@ class Offers(models.Model):
     icon = models.CharField(max_length=255, null=True, blank=True)
     title = models.CharField(max_length=255)
     text = models.TextField()
-    background_image = models.ImageField(upload_to="offers/", null=True, blank=True )
 
 
 class FooterIcon(models.Model):
