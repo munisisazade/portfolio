@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import WebsiteCommon, HeaderSection, Menu, AboutSection, Project, Offers, FooterIcon, CallSection
+
+
 def index(request):
     context = {}
     context["common"] = WebsiteCommon.objects.last()
@@ -11,6 +13,5 @@ def index(request):
     context["footer_list"] = FooterIcon.objects.all()
     context["call"] = CallSection.objects.last()
     return render(request, "index.html", context)
-
 
 # Create your views here.
