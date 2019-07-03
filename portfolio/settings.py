@@ -25,7 +25,7 @@ SECRET_KEY = 'v&9(ar6tazik+%7fe1k($y-%g=#ycr*uh82=ri6yvxc-rtawq5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["116.202.111.126"]
+ALLOWED_HOSTS = ["116.202.111.126", "localhost", "bakery.munisisazade.com"]
 
 
 # Application definition
